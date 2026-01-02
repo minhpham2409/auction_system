@@ -52,7 +52,6 @@ int main() {
                     feature_login(&state);
                     // ===== START NOTIFICATION THREAD =====
                     if (state.is_logged_in) {
-                        printf("[DEBUG] Starting notification listener...\n");
                         start_notification_listener(state.socket);
                         sleep(1); // Give thread time to start
                     }

@@ -13,7 +13,7 @@ static int timer_running = 1;
 
 void* auction_timer_thread(void *arg) {
     (void)arg;
-    printf("[TIMER] Auction timer thread started\n");
+    
     
     // Track which auctions got 30s warning already
     int warned_auctions[1000] = {0};
